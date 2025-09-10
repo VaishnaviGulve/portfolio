@@ -62,10 +62,10 @@ const Form = ({ nameRef }) => {
     }
     emailjs
       .sendForm(
-         "service_3k6tpiv", 
-        "template_7pquujl", 
+         "service_q6evpwk", 
+        "template_aczve4m", 
         form.current,
-        "wMBEmKzz5IFbzmXad" 
+        "NV-VpHjrwz7GPUY3c" 
       )
       
 
