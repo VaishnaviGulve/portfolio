@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import { useEffect, useState } from "react";
-import { WbSunny, Brightness2 } from "@material-ui/icons";
+import { WbSunny, Brightness2 } from "@mui/icons-material";
 import ScrollToTop from "./components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/Error/Error";
