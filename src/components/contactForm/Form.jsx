@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import ThankYou from "./ThankYou";
 import emailjs from "@emailjs/browser";
 import Typewriter from "typewriter-effect";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = ({ nameRef }) => {
   const [username, setUsername] = useState("");
@@ -62,22 +64,35 @@ const Form = ({ nameRef }) => {
     }
     emailjs
       .sendForm(
-         "service_3k6tpiv", 
-        "template_7pquujl", 
+        "service_q6evpwk",
+        "template_aczve4m",
         form.current,
-        "wMBEmKzz5IFbzmXad" 
+        "NV-VpHjrwz7GPUY3c"
       )
-      
-
       .then(
         (result) => {
           console.log(result.text);
           console.log("message sent");
           setIsEmailSent(true);
           setIsDisabled(true);
+          toast.success("Message sent successfully!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
         },
         (error) => {
           console.log(error.text);
+          toast.error("Failed to send message. Please try again.", {
+            position: "top-center",
+            autoClose: 3000,
+            theme: "colored",
+          });
         }
       );
     setEmail("");
@@ -93,69 +108,72 @@ const Form = ({ nameRef }) => {
   }
 
   return (
-    <form className="my-form" ref={form} onSubmit={sendMail}>
-      <div className=" alt-text-yellow Message-me">
-        <Typewriter
-          options={{
-            strings: ["Drop me a message"],
-            autoStart: true,
-            loop: true,
-            cursor: "📑",
-            pauseFor: 5000,
-          }}
-        />
-      </div>
-      <div className="form-div">
-        <input
-          type="text"
-          name="user_name"
-          id="name"
-          value={username}
-          onChange={handleNameChange}
-          ref={nameRef}
-          required
-        />
-        <label htmlFor="name"> Name </label>
-        {errors.username && (
-          <small className="error_message"> {errors.username} </small>
-        )}
-      </div>
-      <div className="form-div">
-        <input
-          type="email"
-          name="user_email"
-          id="email"
-          value={email}
-          onChange={handleEmailChange}
-          required
-        />
-        <label htmlFor="email"> Email</label>
-        {errors.email && (
-          <small className="error_message"> {errors.email} </small>
-        )}
-      </div>
-      <div className="form-div">
-        <textarea
-          name="message"
-          id="message"
-          value={message}
-          onChange={handleMessageChange}
-          spellCheck
-          required
-        />
-        <label htmlFor="message"> Message</label>
-        {errors.message && (
-          <small className="error_message"> {errors.message} </small>
-        )}
-      </div>
+    <>
+      <ToastContainer />
+      <form className="my-form" ref={form} onSubmit={sendMail}>
+        <div className=" alt-text-yellow Message-me">
+          <Typewriter
+            options={{
+              strings: ["Drop me a message"],
+              autoStart: true,
+              loop: true,
+              cursor: "📑",
+              pauseFor: 5000,
+            }}
+          />
+        </div>
+        <div className="form-div">
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            value={username}
+            onChange={handleNameChange}
+            ref={nameRef}
+            required
+          />
+          <label htmlFor="name"> Name </label>
+          {errors.username && (
+            <small className="error_message"> {errors.username} </small>
+          )}
+        </div>
+        <div className="form-div">
+          <input
+            type="email"
+            name="user_email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+            required
+          />
+          <label htmlFor="email"> Email</label>
+          {errors.email && (
+            <small className="error_message"> {errors.email} </small>
+          )}
+        </div>
+        <div className="form-div">
+          <textarea
+            name="message"
+            id="message"
+            value={message}
+            onChange={handleMessageChange}
+            spellCheck
+            required
+          />
+          <label htmlFor="message"> Message</label>
+          {errors.message && (
+            <small className="error_message"> {errors.message} </small>
+          )}
+        </div>
 
-      <input
-        type="submit"
-        disabled={isDisabled}
-        value="Send"
-        className="submit-btn"
-      />
-    </form>
+        <input
+          type="submit"
+          disabled={isDisabled}
+          value="Send"
+          className="submit-btn"
+        />
+      </form>
+    </>
   );
 };
 
