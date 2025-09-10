@@ -21,7 +21,7 @@ const NavBar = ({ onClick, children }) => {
         />
         <span className="logo_text">
 
-        Ilma Khan</span>
+        Vaishnavi Gulve</span>
       </a>
       <div className="switch" title="Toggle Theme" onClick={onClick}>
         {children}

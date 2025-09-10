@@ -81,8 +81,8 @@ const About = () => {
             </div>
 
             <div className="column">
-              <p>Ilma Khan</p>
-              <p className="alt-text"> Frontend Developer </p>
+              <p>Vaishnavi Gulve</p>
+              <p className="alt-text"> UI/UX Designer </p>
             </div>
 
             <hr className="short-hr" />
