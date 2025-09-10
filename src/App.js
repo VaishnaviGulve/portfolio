@@ -15,6 +15,8 @@ function App() {
       : "light"
   );
 
+  const currentYear = new Date().getFullYear(); // Dynamic year
+
   const toggleTheme = () => {
     setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
   };
@@ -37,13 +39,11 @@ function App() {
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
       <footer className="flex column footer">
-        <small> &copy; 2023, all rights reserved</small>
+        <small> &copy; {currentYear}, all rights reserved</small>
         <small>
           Designed & Built by{" "}
           <span className="alt-text TNP">&#xae;</span>{" "}
-        
-          </small>
-        
+        </small>
       </footer>
     </div>
   );

@@ -55,7 +55,7 @@ const Hero = ({ onClick }) => {
               <span className="alt-text-yellow">
                 <Typewriter
                   options={{
-                    strings: ["Front End Developer"],
+                    strings: ["UI/UX Designer"],
                     autoStart: true,
                     loop: true,
                     cursor: "✍️",

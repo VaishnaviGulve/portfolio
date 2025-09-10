@@ -16,8 +16,8 @@ const myLinks = [
   {
     id: uuid(),
     links: "https://x.com/gulvevaishu2546",
-    icons: "fa-brands fa-twitter class-purple",
-    label: "connect with me on twitter ",
+    icons: "fa-brands fa-x-twitter class-purple",
+    label: "connect with me on X ",
   },
   {
     id: uuid(),
