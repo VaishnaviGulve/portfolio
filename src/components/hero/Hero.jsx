@@ -66,7 +66,7 @@ const Hero = ({ onClick }) => {
             </div>
             <h1 className="hero-main-text ">
               I create <span className="alt-text">beautiful</span> and
-              <span className="alt-text"> interactive</span> user interfaces
+              <span className="alt-text"> interactive </span><br/>user interfaces
             </h1>
 
             <div className="btn-div">
