@@ -127,7 +127,7 @@ const About = () => {
             </div>
 
             <Button
-              href="https://app.luminpdf.com/viewer/64ee0403b7942c07bf230fe9"
+              href="https://drive.google.com/file/d/1cuFOIS9Ydm5KuTFHOiamETdkxQ3VBTOF/view?usp=sharing"
               className="btn alt-text"
               target="blank"
             >
