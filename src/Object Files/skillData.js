@@ -3,66 +3,52 @@ import { v4 as uuid } from "uuid";
 const skillData = [
   {
     id: uuid(),
-    skillImage: "./asstes/react.png",
-    logo: "react logo",
-    logo_text: "react js",
+    skillImage: "./assets/figma.png",
+    logo: "figma logo",
+    logo_text: "Figma",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/Webflow.png",
+    logo: "webflow logo",
+    logo_text: "Webflow",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/Photoshop.png",
+    logo: "photoshop logo",
+    logo_text: "Photoshop",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/Sketch.png",
+    logo: "sketch logo",
+    logo_text: "Sketch",
+  },
+  {
+    id: uuid(),
+    skillImage: "./asstes/python.webp",
+    logo: "python logo",
+    logo_text: "Python",
+  },
+  {
+    id: uuid(),
+    skillImage: "./asstes/C++.png",
+    logo: "c/c++ logo",
+    logo_text: "C/C++",
   },
   {
     id: uuid(),
     skillImage: "./asstes/html.png",
     logo: "html logo",
-    logo_text: "html5",
+    logo_text: "HTML",
   },
   {
     id: uuid(),
-    skillImage: "./asstes/css.png",
-    logo: "css logo",
-    logo_text: "css",
-  },
-  {
-    id: uuid(),
-    skillImage: "./asstes/js.png",
-    logo: "javascript logo",
-    logo_text: "javascript",
-  },
-
-  {
-    id: uuid(),
-    skillImage: "./asstes/bootstrap.png",
-    logo: "bootstrap logo",
-    logo_text: "bootstrap",
-  },
-
-  {
-    id: uuid(),
-    skillImage: "./asstes/nextjs.png",
-    logo: "NextJS logo",
-    logo_text: "next js",
-  },
-  {
-    id: uuid(),
-    skillImage: "./asstes/sc.png",
-    logo: "Styled-Components logo",
-    logo_text: "Styled Component",
-  },
-  {
-    id: uuid(),
-    skillImage: "./asstes/framer-motion.png",
-    logo: "Framer Motion",
-    logo_text: "Framer Motion",
-  },
-  {
-    id: uuid(),
-    skillImage: "./asstes/github.png",
-    logo: "github logo",
-    logo_text: "github",
-  },
-  {
-    id: uuid(),
-    skillImage: "./asstes/tailwind-css-icon.png",
-    logo: "Tailwind logo",
-    logo_text: "Tailwind.css",
-  },
+    skillImage: "./asstes/wireframe.png",
+    logo: "wireframe.cc logo",
+    logo_text: "Wireframe.cc",
+  }
 ];
 
 export default skillData;
