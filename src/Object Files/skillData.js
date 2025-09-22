@@ -27,25 +27,25 @@ const skillData = [
   },
   {
     id: uuid(),
-    skillImage: "./asstes/python.webp",
+    skillImage: "./assets/python.webp",
     logo: "python logo",
     logo_text: "Python",
   },
   {
     id: uuid(),
-    skillImage: "./asstes/C++.png",
+    skillImage: "./assets/C++.png",
     logo: "c/c++ logo",
     logo_text: "C/C++",
   },
   {
     id: uuid(),
-    skillImage: "./asstes/html.png",
+    skillImage: "./assets/html.png",
     logo: "html logo",
     logo_text: "HTML",
   },
   {
     id: uuid(),
-    skillImage: "./asstes/wireframe.png",
+    skillImage: "./assets/wireframe.png",
     logo: "wireframe.cc logo",
     logo_text: "Wireframe.cc",
   }
