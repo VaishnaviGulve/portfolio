@@ -4,7 +4,7 @@ export const projectData = [
   {
     id: uuid(),
     title: "Travel App & Web Design",
-    image: "./asstes/travel-app-image.jpg",
+    image: "https://res.cloudinary.com/dngvge2sb/image/upload/v1758727028/travel-app-image_vlrknp.jpg",
     description:
       "A seamless travel platform design offering personalized trip planning, destination insights, and booking features.",
     stacks: [
@@ -22,7 +22,7 @@ export const projectData = [
   {
     id: uuid(),
     title: "Tech Startup Web Design",
-    image: "./asstes/tech-startup-image.jpg",
+    image: "https://res.cloudinary.com/dngvge2sb/image/upload/v1758726988/tech-startup-image_zmmncm.jpg",
     description:
       "A professional website concept for a modern tech startup, showcasing innovation, expertise, and solutions with a sleek UI.",
     stacks: ["Figma", "UI/UX Design Principles", "Google Fonts", "Icon8"],
@@ -35,7 +35,7 @@ export const projectData = [
   {
     id: uuid(),
     title: "FogOFF™ Web Design",
-    image: "./asstes/flogoff-image.jpg",
+    image: "https://res.cloudinary.com/dngvge2sb/image/upload/v1758727027/flogoff_wgm7x3.jpg",
     description:
       "A modern ski goggle brand website highlighting products, vision, and customer trust with a clean, user-friendly interface.",
     stacks: ["Webflow", "UI/UX Design Principles", "Google Fonts"],
@@ -48,7 +48,7 @@ export const projectData = [
   {
     id: uuid(),
     title: "Team App Web Design",
-    image: "./asstes/team-app-image.jpg",
+    image: "https://res.cloudinary.com/dngvge2sb/image/upload/v1758726956/team-app-image_f6yfeg.jpg",
     description:
       "A modern web design concept for a team collaboration app with clean UI and intuitive layout.",
     stacks: ["Figma", "UI/UX Design Principles", "Google Fonts"],
